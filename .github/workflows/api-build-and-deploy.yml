@@ -37,7 +37,7 @@ jobs:
 
       - name: Run tests with dotnet
         working-directory: ${{env.PROJECT_FOLDER}}
-        run: dotnet test --configuration Release --no-build --verbosity detailed
+        run: dotnet test --configuration Release --no-build --verbosity normal
 
       - name: dotnet publish
         working-directory: ${{env.PROJECT_FOLDER}}

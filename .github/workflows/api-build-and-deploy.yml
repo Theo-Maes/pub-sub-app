@@ -36,8 +36,8 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: Run tests with dotnet
-      - working-directory: ${{env.PROJECT_FOLDER}}
-      - run: dotnet test --configuration Release --no-build --verbosity detailed
+        working-directory: ${{env.PROJECT_FOLDER}}
+        run: dotnet test --configuration Release --no-build --verbosity detailed
 
       - name: dotnet publish
         working-directory: ${{env.PROJECT_FOLDER}}
